@@ -37,6 +37,7 @@ I created 4 pivot tables to further explore and compare
 4. pivot_regional_comparisons
 
 ## My Visualizations:
+![30 day rolling retention](https://github.com/sarifeenah/project1/blob/main/30_day_rolling_retention.png)
 1. 30 Day Rolling Retention by join day
 2. Avg. Age of retained players by region
 3. Purchases by retained players by region
@@ -46,7 +47,9 @@ I created 4 pivot tables to further explore and compare
 7. Purchases to Losses
 
 ## Discovered Patterns:
-When breaking down purchasing patterns by players as grouped by their system preference, we notice with the exception of MacOS users, players who lose tend to buy more items and make more purchases overall						
+When breaking down purchasing patterns by players as grouped by their system preference, we notice with the exception of MacOS users, players who lose tend to buy more items and make more purchases overall	
+![purchases to wins by system](https://github.com/sarifeenah/project1/blob/main/purchases_to_wins.png)
+![purchases to losses by system](https://github.com/sarifeenah/project1/blob/main/purchases_to_losses.png)
 								
 ## 3 Key Observations:					
 1. Regionally, there is a  small positive correlation between winning and being retained.					
