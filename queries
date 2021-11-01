@@ -40,45 +40,41 @@ GROUP BY
 joined_day
 
 
-//query to discover player info//
+//query to discover all pertainent player info//
 
-SELECT -- columns to explore
+SELECT
+  DISTINCT pi.player_id,
   location,
-  pi.player_id,
   age AS age_at_signup,
   system,
-  joined,
+  pi.joined,
   m.outcome,
+  MAX(m.day) AS last_match,
+  COUNT(pu.item_id) AS purchases,
+  ii.price
 FROM
-  `heroic-district-329518.gamecompanydata.player_info` AS Pi 
-JOIN
-  `heroic-district-329518.gamecompanydata.matches_info` M
+  `heroic-district-329518.gamecompanydata.player_info` AS pi 
+INNER JOIN
+  `heroic-district-329518.gamecompanydata.matches_info` m -- join 1
 ON
-  Pi.player_id = M.player_id
+  Pi.player_id = m.player_id
+INNER JOIN
+  `heroic-district-329518.gamecompanydata.purchase_info` pu --join 2
+ON
+  Pi.player_id = pu.player_id
+INNER JOIN
+  `heroic-district-329518.gamecompanydata.item_info` ii -- join 3
+ON
+  pu.item_id = ii.item_id
 GROUP BY
   1,
   2,
   3,
   4,
   5,
-  6
+  6,
+  9
 ORDER BY
-  joined DESC
-LIMIT
-  1000
-  
-  //query to explore player purchases//
-  SELECT
-  pi.player_id,
-  pi.item_id AS purchased_item,
-  pi.day,
-  ii.price
- FROM
-  `heroic-district-329518.gamecompanydata.purchase_info`pi
-JOIN heroic-district-329518.gamecompanydata.item_info ii
-ON pi.item_id =ii.item_id
-WHERE pi.day <= 30
-GROUP BY 1,2,4,3
-ORDER BY pi.player_id, pi.day desc 
+  pi.joined
 LIMIT
   1000
