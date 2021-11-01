@@ -66,3 +66,19 @@ ORDER BY
   joined DESC
 LIMIT
   1000
+  
+  //query to explore player purchases//
+  SELECT
+  pi.player_id,
+  pi.item_id AS purchased_item,
+  pi.day,
+  ii.price
+ FROM
+  `heroic-district-329518.gamecompanydata.purchase_info`pi
+JOIN heroic-district-329518.gamecompanydata.item_info ii
+ON pi.item_id =ii.item_id
+WHERE pi.day <= 30
+GROUP BY 1,2,4,3
+ORDER BY pi.player_id, pi.day desc 
+LIMIT
+  1000
