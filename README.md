@@ -63,12 +63,12 @@ North Americans and Mac users.
 
 ### Deliverables:
 1. This README
-2. sql_gamedata_queries.md containing two queries: 
-  rolling retention rate and player information
-3. 30_day_rolling_retention.png 
-4. purchases_to_losses.png 
-5. purchases_to_wins.png 
-6.Find a copy of my google sheets here:
+2. rolling_retention_query.md
+3. player_info.md
+4. 30_day_rolling_retention.md
+5. purchases_to_losses.png 
+6. purchases_to_wins.png 
+7.Find a copy of my google sheets here:
 https://docs.google.com/spreadsheets/d/1N0DI3EL85mpTXdJVFiqlGKbHarBtINIuyOFe2v9nTHU/edit?usp=sharing
 							
 
