@@ -1,6 +1,6 @@
 # Gamedata Project
 
-As gamedata’s one year anniversary approaches, our group comprising Kai Lurker and Sareenah Laing have been tasked with investigating Player Retention.
+As gamedata’s one year anniversary approaches, our group comprising Kai Luker and Sareenah Laing have been tasked with investigating Player Retention.
 
 First, we explored the contents of the dataset provided and can see when players first joined, what their most recent match has been against who and the result.  We can also see purchases made by players of the game.
 
