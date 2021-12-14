@@ -1,6 +1,6 @@
 # Gamedata Project
 
-As gamedata’s one year anniversary approaches, our group comprising Kai Luker and Sareenah Laing have been tasked with investigating Player Retention.
+As gamedata’s one year anniversary approaches, our group of two have been tasked with investigating Player Retention.
 
 First, we explored the contents of the dataset provided and can see when players first joined, what their most recent match has been against who and the result.  We can also see purchases made by players of the game.
 
@@ -38,6 +38,7 @@ I created 4 pivot tables to further explore and compare
 
 ## My Visualizations:
 ![30 Day Rolling Retention](/docs/30_day_rolling_retention.png)
+
 1. 30 Day Rolling Retention by join day
 2. Avg. Age of retained players by region
 3. Purchases by retained players by region
@@ -48,7 +49,9 @@ I created 4 pivot tables to further explore and compare
 
 ## Discovered Patterns:
 When breaking down purchasing patterns by players as grouped by their system preference, we notice with the exception of MacOS users, players who lose tend to buy more items and make more purchases overall	
+
 ![purchases to wins by system](/docs/purchases_to_wins.png)
+
 ![purchases to losses by system](docs/purchases_to_losses.png)
 								
 ## 3 Key Observations:					
